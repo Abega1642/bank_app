@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="dev.razafindratelo.bank.controllers.LoginController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.razafindratelo.bank.controllers.LoginController">
+   <VBox prefHeight="400.0" prefWidth="200.0" styleClass="lg-logo-ctr" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView glyphName="BANK" size="30" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Raze Bank" />
+   </VBox>
+   <VBox layoutX="210.0" layoutY="14.0" prefHeight="350.0" prefWidth="350.0" styleClass="lg-form-ctr" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Label text="Choose your account type" />
+      <ChoiceBox fx:id="acc_selector" prefWidth="150.0" styleClass="account-type-select" />
+      <Label fx:id="payee_identifier" text="Payee Identifier :" />
+      <TextField fx:id="payee_identifier_input" styleClass="inputs" />
+      <Label text="Password :" />
+      <TextField fx:id="password_input" styleClass="inputs" />
+      <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+      <Label fx:id="invalid_input_message" styleClass="invalid-input" text="Invalid Input(s)" />
+   </VBox>
 </AnchorPane>
