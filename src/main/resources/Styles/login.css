@@ -1,0 +1,54 @@
+.lg-container {
+    -fx-background-color: #EEE;
+}
+.lg-logo-ctr {
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+.lg-logo-ctr Text {
+    -fx-font-size: 2em;
+    -fx-fill: #FFF;
+}
+.lg-logo-ctr FontAwesomeIconView {
+    -fx-fill: #ECF39E;
+}
+
+.account-type-select {
+    -fx-background-color: #ECF39E;
+}
+.account-type-select .label {
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+}
+.account-type-select .arrow {
+    -fx-background-color: #132A13;
+}
+.account-types {
+    -fx-background-color: #ECF39E;
+}
+.lg-form-ctr {
+    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+
+.lg-form-ctr Label{
+    -fx-font-size: 1.1em;
+}
+.inputs {
+    -fx-background-color: #FFF;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.1em;
+}
+.lg-form-ctr Button {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 50;
+    -fx-font-size: 1.2em;
+}
+.lg-form-ctr Button:hover{
+    -fx-cursor: hand;
+}
+.invalid-input {
+    -fx-text-fill: red;
+}
